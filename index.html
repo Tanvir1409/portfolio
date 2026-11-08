@@ -13,183 +13,199 @@
   <!-- EDIT after you have a domain: change og:image to the full address, e.g. https://yourdomain.com/og.jpg, and add <meta property="og:url" content="https://yourdomain.com"> -->
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="cover.jpg" imagesrcset="cover-sm.jpg 1000w, cover.jpg 1672w" imagesizes="(max-width: 860px) 100vw, 60vw">
+  <link rel="preload" as="image" href="portrait.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,700,100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <a class="wordmark" href="#top">Tanvir Ahmad Siddiqi</a>
-    <nav aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#ventures">Ventures</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#journey">Journey</a>
-      <a class="nav-cta" href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="panel hero-panel" id="top">
+    <header class="site-header">
+      <a class="wordmark" href="#top">Tanvir<span>.</span></a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#work">What I do</a>
+        <a href="#journey">Journey</a>
+        <a class="pill pill-coral" href="#contact">Let's connect</a>
+      </nav>
+    </header>
 
-  <main id="main">
-    <!-- HERO / COVER -->
-    <section class="hero" id="top">
-      <div class="hero-text">
-        <p class="hero-role">CEO, THM Consultancy &amp; EduGen Global</p>
-        <h1>Tanvir Ahmad Siddiqi</h1>
-        <p class="hero-tagline">Building businesses. Developing people. Creating opportunities.</p>
-        <p class="hero-intro">I lead businesses across education consultancy, business development, digital marketing and technology — turning ideas into working systems and building teams that grow with them.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#ventures">Explore my ventures</a>
-          <a class="btn btn-ghost" href="#contact">Let's connect</a>
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-photo">
+          <svg class="hero-arc" viewBox="0 0 60 260" aria-hidden="true"><path d="M50 8 C 12 60, 8 180, 46 252" /></svg>
+          <div class="hero-disc"></div>
+          <img src="portrait.webp" alt="Tanvir Ahmad Siddiqi in a navy suit with arms crossed" width="688" height="801" fetchpriority="high">
         </div>
-      </div>
-      <figure class="hero-photo">
-        <img src="cover.jpg" srcset="cover-sm.jpg 1000w, cover.jpg 1672w" sizes="(max-width: 860px) 100vw, 60vw"
-             alt="Tanvir Ahmad Siddiqi in a navy suit, standing in an office in front of a world map" width="1672" height="941" fetchpriority="high">
-      </figure>
-    </section>
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="scribble">Tanvir
+            <svg viewBox="0 0 220 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C 50 4, 110 3, 217 9" /><path d="M20 16 C 80 10, 150 10, 205 14" /></svg></span>
+          </h1>
+          <p class="hero-lead">I'm the CEO of <a href="https://thmconsultancy.com" target="_blank" rel="noopener">THM Consultancy</a> and <a href="https://www.edugenglobal.com" target="_blank" rel="noopener">EduGen Global</a>. I build businesses, develop people and create opportunities across education, business development and technology.</p>
+        </div>
+      </section>
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="about-main">
-        <h2>About me</h2>
-        <p class="lead">I'm a growth-oriented entrepreneur working across business development, education consultancy, sales operations, digital marketing and technology-driven business processes.</p>
-        <p>I enjoy identifying opportunities, developing business models, building operational systems and bringing people together around shared goals. To me, entrepreneurship isn't simply starting a business — it's creating value, solving real problems and building organisations that can grow sustainably.</p>
-        <p>I'm particularly interested in how technology and well-designed systems help businesses run better, from CRM workflows and automation to the websites and tools teams rely on every day.</p>
-      </div>
-      <aside class="about-side">
-        <div class="vision">
-          <h3>Vision</h3>
-          <p>To build sustainable, technology-driven businesses that create opportunities, empower people and contribute to economic development.</p>
-        </div>
-        <div class="mission">
-          <h3>Mission</h3>
-          <ul>
-            <li>Build scalable and sustainable businesses</li>
-            <li>Create professional employment opportunities</li>
-            <li>Support teams through leadership, structure and development</li>
-            <li>Integrate technology into business operations</li>
-            <li>Develop internationally connected business opportunities</li>
-          </ul>
-        </div>
-      </aside>
-    </section>
-
-    <!-- VENTURES -->
-    <section class="ventures" id="ventures">
-      <h2>Ventures I lead</h2>
-      <div class="venture-grid">
+      <!-- VENTURES (inside hero panel) -->
+      <section class="ventures" aria-labelledby="ventures-title">
+        <h2 id="ventures-title" class="sr-only">Ventures I lead</h2>
         <article class="venture">
-          <p class="venture-role">Chief Executive Officer</p>
-          <h3>THM Consultancy</h3>
-          <p class="venture-sector">Business consulting, education and technology</p>
-          <p>THM Consultancy works across education consultancy, business development, digital marketing, IT solutions, web and application development, and e-commerce.</p>
-          <ul class="venture-points">
-            <li>Business development and consulting</li>
-            <li>Digital marketing and growth initiatives</li>
-            <li>Website and application development</li>
-            <li>Business systems and operational support</li>
-          </ul>
-          <a class="venture-link" href="https://thmconsultancy.com" target="_blank" rel="noopener">thmconsultancy.com</a>
+          <div class="venture-top">
+            <span class="venture-mark mark-sky" aria-hidden="true">T</span>
+            <div>
+              <h3>THM Consultancy</h3>
+              <p class="venture-role">Chief Executive Officer</p>
+            </div>
+          </div>
+          <p>Business consulting across education, business development, digital marketing, IT solutions, web and app development, and e-commerce.</p>
+          <a class="pill pill-sky" href="https://thmconsultancy.com" target="_blank" rel="noopener">Visit THM Consultancy</a>
         </article>
-
         <article class="venture">
-          <p class="venture-role">Chief Executive Officer</p>
-          <h3>EduGen Global</h3>
-          <p class="venture-sector">International education consultancy</p>
-          <p>EduGen Global helps students explore overseas higher education, university admissions and study-abroad pathways — with clear guidance from first enquiry to application.</p>
-          <ul class="venture-points">
-            <li>Student counselling and application support</li>
-            <li>International education pathway guidance</li>
-            <li>Student recruitment and enquiry management</li>
-            <li>Marketing, team coordination and business development</li>
-          </ul>
-          <a class="venture-link" href="https://www.edugenglobal.com" target="_blank" rel="noopener">edugenglobal.com</a>
+          <div class="venture-top">
+            <span class="venture-mark mark-yellow" aria-hidden="true">E</span>
+            <div>
+              <h3>EduGen Global</h3>
+              <p class="venture-role">Chief Executive Officer</p>
+            </div>
+          </div>
+          <p>An international education consultancy helping students explore overseas higher education, university admissions and study-abroad pathways.</p>
+          <a class="pill pill-yellow" href="https://www.edugenglobal.com" target="_blank" rel="noopener">Visit EduGen Global</a>
         </article>
+      </section>
+    </main>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2><span class="light">A little</span> About Me</h2>
+      <p class="big">I'm a growth-oriented entrepreneur working across business development, education consultancy, sales operations, digital marketing and technology.</p>
+      <p>I enjoy spotting opportunities, shaping business models, building operational systems and bringing people together around shared goals. To me, entrepreneurship isn't simply starting a business — it's creating value, solving real problems and building organisations that grow sustainably.</p>
+    </div>
+    <div class="about-cards">
+      <div class="note note-yellow">
+        <h3>My vision</h3>
+        <p>To build sustainable, technology-driven businesses that create opportunities, empower people and contribute to economic development.</p>
       </div>
-    </section>
+      <div class="note note-sky">
+        <h3>My mission</h3>
+        <ul>
+          <li>Build scalable, sustainable businesses</li>
+          <li>Create professional employment opportunities</li>
+          <li>Support teams through leadership and structure</li>
+          <li>Integrate technology into business operations</li>
+          <li>Develop internationally connected opportunities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <!-- EXPERTISE -->
-    <section class="expertise" id="expertise">
-      <h2>Areas of expertise</h2>
-      <dl class="expertise-list">
-        <div><dt>Entrepreneurship &amp; business development</dt><dd>Opportunity identification, business planning, venture development, partnerships and growth initiatives.</dd></div>
-        <div><dt>Leadership &amp; team management</dt><dd>Recruitment, team coordination, sales performance, staff development and operational accountability.</dd></div>
-        <div><dt>Sales &amp; marketing</dt><dd>Lead generation, customer communication, sales processes, conversion workflows and digital marketing.</dd></div>
-        <div><dt>Education consultancy</dt><dd>International education pathways, student recruitment and application support.</dd></div>
-        <div><dt>Technology &amp; innovation</dt><dd>CRM workflows, custom CRM planning, calling integrations, websites, automation and digital business systems.</dd></div>
-        <div><dt>Business operations</dt><dd>Process design, client onboarding, documentation workflows and operational efficiency.</dd></div>
-      </dl>
-    </section>
+  <!-- WHAT I DO -->
+  <section class="work" id="work">
+    <div class="work-grid">
+      <div class="work-heading">
+        <h2><span class="light">What I</span><br>Work <span class="circled">On<svg viewBox="0 0 120 70" preserveAspectRatio="none" aria-hidden="true"><path d="M70 6 C 20 2, 2 22, 6 40 C 10 62, 70 68, 104 52 C 124 40, 114 10, 80 6 C 66 5, 50 8, 42 12" /></svg></span></h2>
+        <p>The areas where I spend my time — and where I can help.</p>
+      </div>
 
-    <!-- INITIATIVES -->
+      <article class="card">
+        <svg class="icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="34" width="10" height="20" rx="2" class="f-yellow"/><rect x="27" y="24" width="10" height="30" rx="2" class="f-yellow"/><rect x="44" y="12" width="10" height="42" rx="2" class="f-yellow"/><path d="M8 30 L24 18 L36 24 L56 6" class="s"/><path d="M48 6 H56 V14" class="s"/></svg>
+        <h3>Entrepreneurship &amp; business development</h3>
+        <p>Spotting opportunities, business planning, venture development, partnerships and growth.</p>
+      </article>
+      <article class="card">
+        <svg class="icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="20" r="9" class="f-sky s"/><circle cx="13" cy="28" r="7" class="f-coral s"/><circle cx="51" cy="28" r="7" class="f-coral s"/><path d="M16 56 C 16 40, 48 40, 48 56" class="f-sky s"/><path d="M2 56 C 2 46, 14 42, 20 46" class="s"/><path d="M62 56 C 62 46, 50 42, 44 46" class="s"/></svg>
+        <h3>Leadership &amp; team management</h3>
+        <p>Recruitment, team coordination, sales performance, staff development and accountability.</p>
+      </article>
+      <article class="card">
+        <svg class="icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 26 H18 L44 12 V52 L18 38 H8 Z" class="f-coral s"/><path d="M18 38 L22 54 H30 L27 40" class="s"/><path d="M52 24 C 56 28, 56 36, 52 40" class="s"/><path d="M57 18 C 64 26, 64 38, 57 46" class="s"/></svg>
+        <h3>Sales &amp; marketing</h3>
+        <p>Lead generation, customer communication, sales processes, conversion workflows and digital marketing.</p>
+      </article>
+      <article class="card">
+        <svg class="icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M4 24 L32 12 L60 24 L32 36 Z" class="f-yellow s"/><path d="M16 30 V44 C 16 50, 48 50, 48 44 V30" class="f-sky s"/><path d="M60 24 V40" class="s"/><circle cx="60" cy="43" r="3" class="f-coral s"/></svg>
+        <h3>Education consultancy</h3>
+        <p>International education pathways, student recruitment and application support.</p>
+      </article>
+      <article class="card">
+        <svg class="icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="12" width="44" height="30" rx="4" class="f-sky s"/><path d="M4 50 H60 L56 44 H8 Z" class="f-yellow s"/><path d="M24 22 L18 27 L24 32" class="s"/><path d="M40 22 L46 27 L40 32" class="s"/><path d="M34 20 L30 34" class="s"/></svg>
+        <h3>Technology &amp; innovation</h3>
+        <p>CRM workflows, custom CRM planning, calling integrations, websites, automation and digital systems.</p>
+      </article>
+      <article class="card">
+        <svg class="icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="24" cy="36" r="14" class="f-yellow s"/><circle cx="24" cy="36" r="5" class="f-cream s"/><circle cx="46" cy="18" r="10" class="f-yellow s"/><circle cx="46" cy="18" r="3.5" class="f-cream s"/><path d="M24 18 V22 M24 50 V54 M6 36 H10 M38 36 H42 M46 4 V8 M46 28 V32 M32 18 H36 M56 18 H60" class="s"/></svg>
+        <h3>Business operations</h3>
+        <p>Process design, client onboarding, documentation workflows and operational efficiency.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- INITIATIVES -->
+  <div class="panel initiatives-panel">
     <section class="initiatives" id="initiatives">
-      <h2>Selected initiatives</h2>
-      <div class="initiative-grid">
-        <article><h3>Custom CRM development</h3><p>Moving sales operations from a third-party CRM to a custom-built system shaped around our own lead management and workflows.</p></article>
-        <article><h3>Sales team development</h3><p>Recruiting, onboarding and training sales teams, with clear coordination and performance tracking.</p></article>
-        <article><h3>International student recruitment</h3><p>Building the marketing and operational processes behind international education enquiries and applications.</p></article>
-        <article><h3>Digital business infrastructure</h3><p>Websites, marketing systems, communication channels and automation that let small teams work at scale.</p></article>
-        <article><h3>Business expansion</h3><p>Testing business models, service offerings and team structures to find sustainable routes to growth.</p></article>
-      </div>
-    </section>
-
-    <!-- JOURNEY -->
-    <section class="journey" id="journey">
-      <h2>My journey</h2>
-      <ol class="timeline">
-        <li><h3>Entrepreneurial foundations</h3><p>An early interest in business, customer relationships and commercial opportunity.</p></li>
-        <li><h3>Business development &amp; education</h3><p>Experience in education consultancy, student recruitment and international business relationships.</p></li>
-        <li><h3>Building ventures</h3><p>Leading THM Consultancy and EduGen Global as CEO.</p></li>
-        <li><h3>Leadership &amp; operations</h3><p>Building teams, structuring sales processes and introducing organised CRM workflows.</p></li>
-        <li><h3>Technology-driven growth</h3><p>Custom CRM development, calling integrations, workflow automation and scalable digital infrastructure.</p></li>
-      </ol>
-      <!-- EDIT: add years to each stage when you're ready, e.g. <p class="year">2019</p> -->
-    </section>
-
-    <!-- PHILOSOPHY -->
-    <section class="philosophy" id="philosophy">
-      <blockquote>Leadership is about building people, not just managing tasks.</blockquote>
-      <ul class="values">
-        <li><strong>Ownership</strong> Taking responsibility for decisions and outcomes.</li>
-        <li><strong>Accountability</strong> Transparency and professional standards.</li>
-        <li><strong>Innovation</strong> Always looking for a better way to work.</li>
-        <li><strong>Teamwork</strong> An environment where people contribute and grow.</li>
-        <li><strong>Execution</strong> Turning strategy into practical action.</li>
-        <li><strong>Long-term thinking</strong> Sustainable growth over short-term gains.</li>
+      <h2><span class="light">Selected</span> Initiatives</h2>
+      <ul class="initiative-list">
+        <li><span class="dot dot-coral"></span><div><h3>Custom CRM development</h3><p>Moving sales operations from a third-party CRM to a custom system built around our own lead management and workflows.</p></div></li>
+        <li><span class="dot dot-sky"></span><div><h3>Sales team development</h3><p>Recruiting, onboarding and training sales teams, with clear coordination and performance tracking.</p></div></li>
+        <li><span class="dot dot-yellow"></span><div><h3>International student recruitment</h3><p>The marketing and operational processes behind international education enquiries and applications.</p></div></li>
+        <li><span class="dot dot-coral"></span><div><h3>Digital business infrastructure</h3><p>Websites, marketing systems, communication channels and automation that let small teams work at scale.</p></div></li>
+        <li><span class="dot dot-sky"></span><div><h3>Business expansion</h3><p>Testing business models, service offerings and team structures to find sustainable routes to growth.</p></div></li>
       </ul>
     </section>
+  </div>
 
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <div class="contact-intro">
-        <h2>Let's connect</h2>
-        <p>I'm always glad to hear from entrepreneurs, business leaders, collaborators and people with ideas worth building. Call or message me directly.</p>
+  <!-- JOURNEY -->
+  <section class="journey" id="journey">
+    <h2><span class="light">My</span> Journey</h2>
+    <ol class="timeline">
+      <li><h3>Entrepreneurial foundations</h3><p>An early interest in business, customer relationships and commercial opportunity.</p></li>
+      <li><h3>Business development &amp; education</h3><p>Experience in education consultancy, student recruitment and international business relationships.</p></li>
+      <li><h3>Building ventures</h3><p>Leading THM Consultancy and EduGen Global as CEO.</p></li>
+      <li><h3>Leadership &amp; operations</h3><p>Building teams, structuring sales processes and introducing organised CRM workflows.</p></li>
+      <li><h3>Technology-driven growth</h3><p>Custom CRM development, calling integrations, workflow automation and scalable digital infrastructure.</p></li>
+    </ol>
+    <!-- EDIT: add years to each stage when you're ready -->
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="philosophy">
+    <blockquote>“Leadership is about <span class="underline-coral">building people</span>, not just managing tasks.”</blockquote>
+    <ul class="values">
+      <li class="v-yellow"><strong>Ownership</strong>Responsibility for decisions and outcomes</li>
+      <li class="v-sky"><strong>Accountability</strong>Transparency and professional standards</li>
+      <li class="v-coral"><strong>Innovation</strong>Always looking for a better way</li>
+      <li class="v-sky"><strong>Teamwork</strong>Room for people to contribute and grow</li>
+      <li class="v-coral"><strong>Execution</strong>Turning strategy into action</li>
+      <li class="v-yellow"><strong>Long-term thinking</strong>Sustainable growth over quick wins</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-wrap" id="contact">
+    <div class="contact">
+      <div>
+        <h2>Let's connect <span aria-hidden="true">👋</span></h2>
+        <p>I'm always glad to hear from entrepreneurs, business leaders, collaborators and people with ideas worth building.</p>
       </div>
-      <div class="contact-card">
-        <a class="contact-phone" href="tel:+8801981180204">+880 1981 180204</a>
+      <div class="contact-box">
+        <a class="phone" href="tel:+8801981180204">+880 1981 180204</a>
         <div class="contact-actions">
-          <a class="btn btn-primary" href="https://wa.me/8801981180204" target="_blank" rel="noopener">Message on WhatsApp</a>
-          <a class="btn btn-ghost" href="tel:+8801981180204">Call now</a>
+          <a class="pill pill-ink" href="https://wa.me/8801981180204" target="_blank" rel="noopener">Message on WhatsApp</a>
+          <a class="pill pill-white" href="tel:+8801981180204">Call me</a>
         </div>
-        <dl class="contact-meta">
-          <div><dt>Role</dt><dd>CEO, THM Consultancy &amp; EduGen Global</dd></div>
-          <div><dt>Based in</dt><dd>Dhaka, Bangladesh</dd></div>
-          <div><dt>Websites</dt><dd><a href="https://thmconsultancy.com" target="_blank" rel="noopener">thmconsultancy.com</a><br><a href="https://www.edugenglobal.com" target="_blank" rel="noopener">edugenglobal.com</a></dd></div>
-          <!-- EDIT: add email and LinkedIn, e.g.
-          <div><dt>Email</dt><dd><a href="mailto:you@example.com">you@example.com</a></dd></div>
-          <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/your-name" target="_blank" rel="noopener">linkedin.com/in/your-name</a></dd></div> -->
-        </dl>
+        <p class="contact-meta">CEO, THM Consultancy &amp; EduGen Global · Dhaka, Bangladesh</p>
+        <!-- EDIT: add email / LinkedIn here -->
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer class="site-footer">
+    <a class="wordmark" href="#top">Tanvir<span>.</span></a>
     <p>© <span id="year">2026</span> Tanvir Ahmad Siddiqi</p>
-    <a href="#top">Back to top</a>
   </footer>
 
   <script src="script.js" defer></script>
